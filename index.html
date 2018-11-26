@@ -1,6 +1,18 @@
+<link rel="stylesheet" href="style.css">
+
 <form action="https://formspree.io/forma@mailinator.com" method="POST">
-    Ime i prezime: <input name="ime-prezime">
-    Teleon: <input name="telefon">
-    Email: <input type="email" name="email">
+    <div>
+        <label for="ime">Ime i prezime: <input name="ime-prezime" id="ime" pattern="/^[a-z ,.'-]+$/i" minlength="5" required></label>
+    </div>
+
+    <div>
+        <label for="telefon">Teleon: <input id="telefon" name="telefon" placeholder="+381" minlength="5" maxlength="20" required></label>
+    </div>
+
+    <div>
+        <label for="email">Email: <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" id="email" name="email" required></label>
+    </div>
+
     <button>Posalji</button>
+
 </form>
