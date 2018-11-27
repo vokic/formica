@@ -1,0 +1,41 @@
+
+<link rel="stylesheet" href="fstyle.css">
+<div class="container">
+
+<h3>Contact us:</h3>
+
+<form>
+    <div>
+            Name: <label for="ime"> <input name="ime-prezime" id="ime" pattern="/^[a-z ,.'-]+$/i" minlength="5"
+                required></label>
+    </div>
+
+    <div>
+            Email:<label for="email"> <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" id="email" name="email"
+                required></label>
+    </div>
+
+    <div>
+            Support:
+            <label for="jezik"></label>
+        <select name="jezik" id="jezik">
+            <option value="1">JavaScript</option>
+            <option value="2">PHP</option>
+            <option value="3">C</option>
+        </select>
+    </div>
+
+    <div>
+            Problem <label for="poruka"><textarea name="poruka" id="poruka" cols="80" rows="10"></textarea></label>
+    </div>
+
+<div>
+    <p>Captcha</p><img src="" alt="">
+</div>
+
+
+    <button>Send</button>
+
+
+</form>
+</div>
